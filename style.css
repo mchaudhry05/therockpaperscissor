@@ -1,0 +1,211 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 20px;
+}
+
+body{
+  font-family: sans-serif;
+  background-image: url("images/background.svg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+#user{
+  margin: 50px 20px;
+  font-family: sans-serif;
+  font-size: 100px;
+  color: black;
+  text-align: left;
+}
+
+#computer{
+  margin: 60px 20px;
+  font-family: sans-serif;
+  font-size: 100px;
+  color: black;
+  text-align: right;
+}
+
+#result{
+  text-align: center;
+  color: orange;
+}
+
+#rock{
+  width: 250px;
+  height: 250px;
+  border: 23px solid;
+  border-color: orange;
+  background-color: #fff5ee;
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+
+}
+
+#paper{
+  width: 250px;
+  height: 250px;
+  border: 23px solid;
+  border-color: orange;
+  background-color: #fff5ee;
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+
+}
+
+#scissor{
+  width: 250px;
+  height: 250px;
+  border: 23px solid;
+  background-color: #fff5ee;
+  border-color: orange;
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+
+}
+
+
+#rock:hover,
+#paper:hover,
+#scissor:hover{
+  transform: scale(1.1);
+}
+
+.label,
+.label-scissor{
+   margin: 20px;
+   font-size: 20px;
+}
+
+
+.gametitle{
+  font-family:sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff5ee;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+}
+
+.scoreboard{
+  background-color: orange;
+  margin: 50px auto;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.colon{
+  margin: -170px 20px;
+  font-family: sans-serif;
+  font-size: 100px;
+  color: black;
+  text-align: center;
+}
+
+.scoreboardlabel{
+  text-align: right;
+  font-family: sans-serif;
+  margin-top: -40px;
+  margin-right: 5px;
+  font-size: 10px;
+}
+
+.userlabel{
+  margin: -30px 20px;;
+  font-family: sans-serif;
+  color: black;
+  text-align: left;
+}
+
+.computerlabel{
+  margin: 10px;
+  font-family: sans-serif;
+  color: black;
+  text-align: right;
+}
+
+.wrapper{
+  margin: 0px auto;
+  width: 1100px;
+  height: 500px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+
+#choices{
+  display: flex;
+  margin: 35px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  html, body {
+      height: 100%;
+  }
+  .gametitle{
+    font-family:sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff5ee;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+  }
+
+  #result{
+    text-align: center;
+    color: orange;
+    font-size: 10px;
+  }
+
+
+#choices{
+  display: flex;
+  justify-content: center;
+}
+
+#rock,
+#paper,
+#scissor{
+  margin-left: 10px;
+  width: 100px;
+  height:100px;
+  border: 10px solid;
+  border-color: orange;
+}
+
+.label{
+  font-size: 10px;
+}
+
+.label-scissor{
+  margin-left: 15px;
+  font-size: 10px;
+}
+
+.rock-picture{
+  width: 50%;
+  height: 50%;
+  margin-top: -20px;
+}
+
+.paper-picture{
+  width: 40%;
+  height:40%;
+  margin-top: -20px;
+}
+
+.scissor-picture{
+  width: 50%;
+  height: 50%;
+  margin-top: -15px;
+}
+}
